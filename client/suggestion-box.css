@@ -1,0 +1,24 @@
+#suggestion-box a {
+  text-decoration: none;
+  color: #4F5B6A;
+}
+
+#suggestion-box .suggestion {
+  list-style: none;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+}
+
+#suggestion-box .suggestion .suggestion-content {
+  font-size: 14px;
+}
+
+#suggestion-box .suggestion button{
+  background-color: #F9FAFC;
+  color: #4F5B6A;
+}
+
+#suggestion-box .suggestion button i{
+  font-size: 20px;
+  color: #ff5270;
+}

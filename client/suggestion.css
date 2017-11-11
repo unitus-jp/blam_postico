@@ -27,28 +27,3 @@
 #suggestions .suggestion-wrapper {
   background-color: #F9FAFC;
 }
-
-#suggestions a {
-  text-decoration: none;
-  color: #4F5B6A;
-}
-
-#suggestions .suggestion {
-  list-style: none;
-  border: solid 1px #ccc;
-  border-radius: 4px;
-}
-
-#suggestions .suggestion .suggestion-content {
-  font-size: 14px;
-}
-
-#suggestions .suggestion button{
-  background-color: #F9FAFC;
-  color: #4F5B6A;
-}
-
-#suggestions .suggestion button i{
-  font-size: 20px;
-  color: #ff5270;
-}
