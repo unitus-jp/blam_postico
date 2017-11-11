@@ -8,6 +8,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    User.create(username: params[:name], email: params[:email], password: params[:password])
+    user = User.find_or_create_from_auth_hash(request.env['omniauth.auth'])
+  # request.env['omniauth.auth']に、OmniAuthによってHashのようにユーザーのデータが格納されている。
+    session[:user_id] = user.id
+    redirect_to root_path, notice: 'ログインしました'
   end
 end
