@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-  def list
+  def show
     @user = User.find(params[:id])
+    @games = Game.all
   end
 
   def new
@@ -10,4 +11,9 @@ class UsersController < ApplicationController
   def create
     User.create(username: params[:name], email: params[:email], password: params[:password])
   end
+
+  def suggest
+    @games = Game.all
+  end
+
 end

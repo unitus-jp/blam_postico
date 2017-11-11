@@ -6,8 +6,12 @@ Rails.application.routes.draw do
 
   scope "users" do
     get 'new', to: 'users#new'
-    get ':id' ,to: 'users#list'
     post 'create', to: 'users#create'
+    get ':id' ,to: 'users#show'
+    get ':id/suggest' ,to: 'users#suggest'
+    post ':id/suggest', to: 'suggestions#create'
+
+
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -15,6 +19,7 @@ Rails.application.routes.draw do
 
  scope "company" do
    get 'new', to: 'companies#new'
+   get 'list', to: 'companies#list'
    post 'create', to: 'companies#create'
 
    scope "game" do

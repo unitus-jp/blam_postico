@@ -7,6 +7,8 @@ class CompaniesController < ApplicationController
     Company.create(name: params[:name])
   end
 
-  private
+  def list
+    @companies = Company.all
+  end
 
 end

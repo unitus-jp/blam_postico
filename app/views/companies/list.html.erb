@@ -1,3 +1,4 @@
-<%= form_tag("create", method: "post") do %>
-  <%   @suggestions.each |suggestions| %>
+<% @companies.each do |company| %>
+  <h3><%= company.id %></h3>
+  <h3><%= company.name %></h3>
 <% end %>
