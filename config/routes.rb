@@ -8,6 +8,6 @@ Rails.application.routes.draw do
  root to: "home#index"
 
  scope "company" do
-   get 'new'
+   get 'new', to: 'companys#new'
  end
 end
