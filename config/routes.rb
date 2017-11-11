@@ -4,6 +4,12 @@ Rails.application.routes.draw do
 
   get 'home/show'
 
+  scope "users" do
+    get 'new', to: 'users#new'
+    get ':id' ,to: 'users#list'
+    post 'create', to: 'users#create'
+  end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
  root to: "home#index"
 
