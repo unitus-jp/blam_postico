@@ -8,6 +8,7 @@ Rails.application.routes.draw do
  root to: "home#index"
 
  scope "company" do
-   get 'new', to: 'companys#new'
+   get 'new', to: 'companies#new'
+   post 'create', to: 'companies#create'
  end
 end
