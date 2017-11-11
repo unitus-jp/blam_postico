@@ -1,0 +1,9 @@
+  <%= form_tag("suggest", method:"post") do %>
+  <%= select :game, :id, @games.map{|g| [g.name, g.id]} %>
+  <%= label_tag(:title, "タイトル") %>
+  <%= text_field_tag(:title) %>
+  <%= label_tag(:content, "本文") %>
+  <%= text_field_tag(:content) %>
+
+  <%= submit_tag("提案する") %>
+  <% end %>
