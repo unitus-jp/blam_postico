@@ -1,0 +1,7 @@
+<%= @user.username %>
+<%= @user.email %>
+
+<%= form_tag("suggest", method:"post") do %>
+<%= select :game_name, @games, class:"form-control" %>
+<%= submit_tag("提案") %>
+<% end %>
