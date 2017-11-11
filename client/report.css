@@ -11,11 +11,6 @@ body .main-content{
   margin-left: 2vw;
 }
 
-.main-content .solve-button:after{
-  content: '';
-  display: block;
-  clear: both;
-}
 
 .main-content .solve-button{
   background-color: #00B8F8;
@@ -26,7 +21,6 @@ body .main-content{
   padding: 2vw 13px;
   padding-left: 4vw;
   border-radius: 4px 4px 4px 4px;
-  float: right;
   box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.3);
   font-size: 4vw;
 }
