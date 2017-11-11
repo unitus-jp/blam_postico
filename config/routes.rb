@@ -10,5 +10,11 @@ Rails.application.routes.draw do
  scope "company" do
    get 'new', to: 'companies#new'
    post 'create', to: 'companies#create'
+
+   scope "game" do
+     get 'new', to: 'games#new'
+     post 'create', to: 'games#create'
+   end
  end
+
 end
