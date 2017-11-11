@@ -1,6 +1,6 @@
 class SuggestionsController < ApplicationController
   def list
-    binding.pry
-    @suggestions = Suggestion.all
+    @game = Game.find(params[:id])
+    @suggestions = @game.suggestions
   end
 end
