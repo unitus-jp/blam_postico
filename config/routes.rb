@@ -5,29 +5,28 @@ Rails.application.routes.draw do
   get 'home/show'
 
   scope "users" do
-    get 'new', to: 'users#new'
-    post 'create', to: 'users#create'
-    get ':id' ,to: 'users#show'
-    get ':id/suggest' ,to: 'users#suggest'
-    post ':id/suggest', to: 'suggestions#create'
-
-
+    get 'new', to: 'users#new'  #ユーザー登録
+    post 'create', to: 'users#create'  #ユーザー情報送信
+    get ':id' ,to: 'users#show'  # マイページ
+    get ':id/suggest' ,to: 'users#suggest'  #提案ページ
+    post ':id/suggest', to: 'suggestions#create'  #提案送信
   end
 
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
- root to: "home#index"
+ root to: "home#index" #TOPページ
 
  scope "company" do
-   get 'new', to: 'companies#new'
-   get 'list', to: 'companies#list'
-   post 'create', to: 'companies#create'
+   get 'new', to: 'companies#new' #会社登録
+   get 'list', to: 'companies#list' #会社一覧
+   post 'create', to: 'companies#create' #会社登録送信
 
    scope "game" do
-     get 'new', to: 'games#new'
-     post 'create', to: 'games#create'
+     get 'new', to: 'games#new' #ゲーム登録
+     post 'create', to: 'games#create' #ゲーム登録送信
 
      scope ":id/suggestion" do
-       get 'list', to:'suggestions#list'
+       get 'list', to:'suggestions#list' #提案一覧
      end
    end
  end
