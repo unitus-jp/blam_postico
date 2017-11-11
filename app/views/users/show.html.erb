@@ -2,6 +2,6 @@
 <%= @user.email %>
 
 <%= form_tag("suggest", method:"post") do %>
-<%= select :game_name, @games, class:"form-control" %>
+<%= select :game, :id, @games.map{|g| [g.name, g.id]} %>
 <%= submit_tag("提案") %>
 <% end %>

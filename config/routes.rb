@@ -8,8 +8,8 @@ Rails.application.routes.draw do
     get 'new', to: 'users#new'
     post 'create', to: 'users#create'
     get ':id' ,to: 'users#show'
-    get ':id/suggestion' ,to: 'users#suggestion'
-    post 'suggest', to: 'users#suggest'
+    get ':id/suggest' ,to: 'users#suggest'
+    post ':id/suggest', to: 'suggestions#create'
 
 
   end

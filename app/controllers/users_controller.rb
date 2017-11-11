@@ -12,11 +12,8 @@ class UsersController < ApplicationController
     User.create(username: params[:name], email: params[:email], password: params[:password])
   end
 
-  def suggestion
-  end
-
   def suggest
-    Suggestion.create(game_id: params[:game_id], content: params[:content])
+    @games = Game.all
   end
 
 end
