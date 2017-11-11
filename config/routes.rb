@@ -14,6 +14,10 @@ Rails.application.routes.draw do
    scope "game" do
      get 'new', to: 'games#new'
      post 'create', to: 'games#create'
+
+     scope ":id/suggestion" do
+       get 'list', to:'suggestions#list'
+     end
    end
  end
 
