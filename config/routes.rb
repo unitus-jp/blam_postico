@@ -20,9 +20,11 @@ Rails.application.routes.draw do
  root to: "home#index" #TOPページ
 
  scope "company" do
-   get 'new', to: 'companies#new' #会社登録
-   get 'list', to: 'companies#list' #会社一覧
+   get 'top', to: 'companies#top'
+  # post 'new', to: 'companies#new' #会社登録
+   #get 'list', to: 'companies#list' #会社一覧
    post 'create', to: 'companies#create' #会社登録送信
+   get 'shinonome', to: 'companies#shinonome'
 
    scope "game" do
      get 'new', to: 'games#new' #ゲーム登録

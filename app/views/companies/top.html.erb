@@ -1,30 +1,31 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./top-company.css">
   </head>
   <body>
-
-
-
     <header class="px-2 py-3">
       <div class="container">
         <div class="row">
           <div class="col logo">
-            <%= image_tag("Proposta.001.png") %>
+            <img src="./Proposta.001.png" alt="">
           </div>
           <div class="col-3">
             <div class="d-flex align-items-center justify-content-end h-100 sharebuttons">
               <div class="m-1">
-                <%= image_tag("iine.png") %>
+                <img src="./iine.png" alt="">
               </div>
               <div class="m-1">
-                <%= image_tag("twitter.png") %>
+                <img src="./twitter.png" alt="">
               </div>
               <div class="m-1">
-                <%= image_tag("line.png") %>
+                <img src="./line.png" alt="">
               </div>
             </div>
           </div>
@@ -34,34 +35,28 @@
     <div class="main-content">
       <div class="photo">
         <div class="logo">
-          <%= image_tag("Proposta.001.png") %>
+          <img src="./Proposta.001.png" alt="">
         </div>
         <div class="contents">
           これはサンプルです。
         </div>
         <div class="buttons">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-              </div>
-              <div class="col">
-                <a href="#">
-                  <div class="login">
-                    ログイン
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <%= link_to :controller => 'users', :action => 'show', :id => 1 do %>
-                  <div class="no-login">
-                    提案一覧をみる
-                  </div>
-                <% end %>
-              </div>
-              <div class="col">
+          <div class="form-group">
+            <div class="container">
+              <%= form_tag("create", method: "post") do %>
 
-              </div>
+                <%= label_tag(:name,"会社名") %>
+                <%= text_field_tag(:name) %>
+
+                パスワード
+              <input class="form-control" type="text" name="" value=""></input>
             </div>
+          <a href="0.0.0.0:3000/company/shinonome"><div class="login">
+            <%= submit_tag("ログイン") %>
+            <% end %>
+          </div></a>
+          <div class="clear">
+
           </div>
         </div>
       </div>

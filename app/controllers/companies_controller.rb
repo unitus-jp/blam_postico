@@ -1,14 +1,18 @@
 class CompaniesController < ApplicationController
-  def new
-    @company = Company.new
-  end
+  #def new
+  #  @company = Company.new
+  #end
 
   def create
     Company.create(name: params[:name])
+    redirect_to controller:'companies', action:'shinonome'
   end
 
-  def list
-    @companies = Company.all
+  def top
   end
+
+  def shinonome
+  end
+
 
 end
