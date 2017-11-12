@@ -8,10 +8,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def create
-    User.create(username: params[:name], email: params[:email], password: params[:password])
-  end
-
   def suggest
     @games = Game.all
   end
