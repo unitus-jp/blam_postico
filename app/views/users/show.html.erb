@@ -1,0 +1,6 @@
+<%= @user.nickname %>
+<img src="<%= @user.image_url %>">
+
+<% @suggestions.each do |suggestion| %>
+  <%= suggestion.content %>
+<% end %>

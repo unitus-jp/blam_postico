@@ -1,0 +1,7 @@
+<%= form_tag("create", method: "post") do %>
+
+  <%= label_tag(:name, "会社名") %>
+  <%= text_field_tag(:name) %>
+
+  <%= submit_tag("作成") %>
+<% end %>

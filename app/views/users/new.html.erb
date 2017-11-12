@@ -1,0 +1,11 @@
+<%= form_tag("create", method: "post") do %>
+
+  <%= label_tag(:name, "名前") %>
+  <%= text_field_tag(:name) %>
+  <%= label_tag(:email, "メール") %>
+  <%= text_field_tag(:email) %>
+  <%= label_tag(:password, "パスワード") %>
+  <%= text_field_tag(:password) %>
+
+  <%= submit_tag("作成") %>
+<% end %>
