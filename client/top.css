@@ -21,21 +21,12 @@ body {
   width: 40vw;
 }
 
-.main-content .photo .buttons:before{
-  clear: both;
-  display: block;
-  content: '';
-}
-
 .main-content .photo .buttons .login,.no-login{
-  float: left;
   background-color: #00B8F8;
-  width: 30%;
-  height: 7%;
+  width: 20vw;
   margin-top: 20px;
-  margin-left: 14%;
-  border-radius: 4px 4px 4px 4px;
-  padding: 2vw 0px;
+  border-radius: 8px;
+  padding: 1.2vw 0px;
   color: #FFFFFF;
   box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.3);
   opacity: 1.0;
