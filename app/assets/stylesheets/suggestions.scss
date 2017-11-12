@@ -1,3 +1,32 @@
 // Place all the styles related to the Suggestions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#suggestions {
+  color: #4F5B6A;
+}
+
+#suggestions .sub-header {
+  text-decoration: none;
+  border-top: 3px solid #E9EEF4;
+  border-bottom: 3px solid #E9EEF4;
+}
+
+#suggestions button {
+  cursor: pointer;
+}
+
+#suggestions .sub-header .dropdown-toggle {
+  background-color: white;
+  color: #4F5B6A;
+  font-size: 14px;
+  border: 3px solid #E9EEF4;
+}
+
+#suggestions .sub-header .solve-btn {
+  background-color: #00B8F8;
+  color: white;
+}
+
+#suggestions .suggestion-wrapper {
+  background-color: #F9FAFC;
+}

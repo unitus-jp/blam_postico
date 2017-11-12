@@ -1,6 +1,102 @@
-<%= @user.nickname %>
-<img src="<%= @user.image_url %>">
 
-<% @suggestions.each do |suggestion| %>
-  <%= suggestion.content %>
-<% end %>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./suggestion.css">
+    <link rel="stylesheet" href="./suggestion-box.css">
+    <link rel="stylesheet" href="./header.css">
+    <script src="https://use.fontawesome.com/20e608a822.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <header class="px-2 py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col logo">
+            <%= image_tag("Proposta.001.png") %>
+          </div>
+          <div class="col-3">
+            <div class="d-flex align-items-center justify-content-end h-100 sharebuttons">
+              <div class="m-1">
+                <%= image_tag("iine.png") %>
+              </div>
+              <div class="m-1">
+                  <%= image_tag("iine.png") %>
+              </div>
+              <div class="m-1">
+              <%= image_tag("line.png") %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="suggestions">
+      <div class="p-4 sub-header">
+        <div class="d-flex justify-content-end align-items-center">
+          <h4 class=" m-0 mr-auto d-inline">
+            <%= @user.nickname %>
+            <img src="<%= @user.image_url %>">
+          </h4>
+          <div class="dropdown mr-4">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              お気に入り順
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">お気に入り順</a>
+              <a class="dropdown-item" href="#">新着順</a>
+            </div>
+          </div>
+          <div class="mr-3">
+            <strong>3</strong>件
+          </div>
+        </div>
+      </div>
+      <div class="suggestion-wrapper">
+        <div class="container pt-4">
+          <div class="row">
+            <div class="col">
+              投稿一覧
+            </div>
+          </div>
+        </div>
+        <div class="container py-4">
+          <form class="" name="solveForm" method="post">
+            <section id="suggestion-box">
+              <div class="row">
+                <div class="col">
+                  <a href="#">
+                    <div class="px-4 py-5 my-3 bg-white suggestion">
+                      <h5 class="mb-4">バグが多すぎて困っています</h5>
+                      <div class="suggestion-content"><% @suggestions.each do |suggestion| %>
+                        <%= suggestion.content %>
+                      <% end %></div>
+                      <div class="">
+                        <button type="button" name="button" class="btn bg-white p-0 pt-3">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                          <span class="font-weight-bold">11</span>いいね
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $('.dropdown-item').on('click', function() {
+        $('#dropdownMenuButton').html($(this).html())
+      })
+    </script>
+  </body>
+</html>

@@ -1,8 +1,4 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
- body {
+body {
   height: 100%;
 }
 
@@ -32,23 +28,29 @@
 }
 
 .main-content .photo .buttons .login,.no-login{
-  width: 20vw;
+  float: left;
+  background-color: #00B8F8;
+
   margin-top: 20px;
-  border-radius: 8px;
-  padding: 1.6vw 0px;
+  
+  border-radius: 4px 4px 4px 4px;
+  padding: 2vw 0px;
+  color: #FFFFFF;
   box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.3);
   opacity: 1.0;
   font-size: 2vw;
 }
 
-.main-content .photo .buttons .login{
-  border: 2px solid white;
-  color: white;
+.company-login {
   background-color: #00B8F8;
-}
-
-.main-content .photo .buttons .no-login{
-  border: 2px solid #00B8F8;
-  color: #00B8F8;
-  background-color: white;
+  width: 30%;
+  height: 7%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 4px 4px 4px 4px;
+  padding: 2vw 0px;
+  color: #FFFFFF;
+  box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  opacity: 1.0;
+  font-size: 2vw;
 }
