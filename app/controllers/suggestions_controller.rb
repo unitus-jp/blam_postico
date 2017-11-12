@@ -1,9 +1,12 @@
 class SuggestionsController < ApplicationController
-  def list
+  def list_com
     @game = Game.find(params[:id])
     @suggestions = @game.suggestions
   end
 
+  def list_user
+    @suggestions = Suggestion.all
+  end
 
   def create
     Suggestion.create(game_id: params[:game_id], title: params[:title], content: params[:content])
