@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./report.css">
     <link rel="stylesheet" href="./suggestion-box.css">
+    <link rel="stylesheet" href="./suggestion.css">
     <script src="https://use.fontawesome.com/20e608a822.js"></script>
   </head>
   <body>
@@ -30,7 +31,18 @@
     </header>
     <div class="main-content">
       <div class="selects">
-        選択した提案
+        <section id="suggestions">
+          <div class="p-4 sub-header">
+            <div class="d-flex justify-content-end align-items-center">
+              <h4 class=" m-0 mr-auto d-inline">
+                採用一覧
+              </h4>
+              <div class="mr-3">
+                <strong>3</strong>件
+              </div>
+            </div>
+          </div>
+      </section>
         <div class="container">
           <section id="suggestion-box">
             <div class="row">
@@ -39,12 +51,6 @@
                   <div class="px-4 py-5 my-3 bg-white suggestion">
                     <h5 class="mb-4">バグが多すぎて困っています</h5>
                     <div class="suggestion-content">このゲームを始めて1週間たちましたがエラーが出すぎていて困っています！</div>
-                    <div class="">
-                      <button type="button" name="button" class="btn bg-white p-0 pt-3">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <span class="font-weight-bold">11</span>いいね
-                      </button>
-                    </div>
                   </div>
                 </a>
               </div>
@@ -52,17 +58,7 @@
           </section>
         </div>
       </div>
-      <div class="container">
-        <div class="form-group">
-          <input class="form-control" type="title" name="" value=""></input>
-          <textarea class="form-control" name="name" rows="8" cols="80"></textarea>
-        </div>
-      </div>
-      <div class="d-flex justify-content-end">
-        <div class="solve-button">
-          採用！
-        </div>
-      </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
