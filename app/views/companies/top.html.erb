@@ -43,13 +43,17 @@
         <div class="buttons">
           <div class="form-group">
             <div class="container">
-                会社名
-              <input class="form-control" type="text" name="" value=""></input>
+              <%= form_tag("create", method: "post") do %>
+
+                <%= label_tag(:name,"会社名") %>
+                <%= text_field_tag(:name) %>
+
                 パスワード
               <input class="form-control" type="text" name="" value=""></input>
             </div>
           <a href="0.0.0.0:3000/company/shinonome"><div class="login">
-            ログイン
+            <%= submit_tag("ログイン") %>
+            <% end %>
           </div></a>
           <div class="clear">
 

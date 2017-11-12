@@ -5,6 +5,7 @@ class CompaniesController < ApplicationController
 
   def create
     Company.create(name: params[:name])
+    redirect_to controller:'companies', action:'shinonome'
   end
 
   def top
@@ -12,6 +13,6 @@ class CompaniesController < ApplicationController
 
   def shinonome
   end
-  
+
 
 end
