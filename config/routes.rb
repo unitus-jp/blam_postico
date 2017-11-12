@@ -8,13 +8,13 @@ Rails.application.routes.draw do
   get "/auth/:provider/callback" => "sessions#create"
 
   scope "users" do
+    get 'suggestion', to: 'suggestions#list_user'
     get 'new', to: 'users#new'  #ユーザー登録
     post 'create', to: 'users#create'  #ユーザー情報送信
     get ':id' ,to: 'users#show'  # マイページ
     get ':id/suggest' ,to: 'users#suggest'  #提案ページ
     post ':id/suggest', to: 'suggestions#create'  #提案送信
   end
-
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
  root to: "home#index" #TOPページ
@@ -29,7 +29,7 @@ Rails.application.routes.draw do
      post 'create', to: 'games#create' #ゲーム登録送信
 
      scope ":id/suggestion" do
-       get 'list', to:'suggestions#list' #提案一覧
+       get 'list', to:'suggestions#list_com' #提案一覧
      end
    end
  end
