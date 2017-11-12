@@ -4,9 +4,9 @@ header{
 
 
 header .container .row .logo img{
-  width: 50%;
+  width: 20%;
 }
 
-header .container .row .col-1 img{
-  width: 50%;
+header .sharebuttons img{
+  width: 35px;
 }
