@@ -3,7 +3,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @games = Game.all
     @suggestions = @user.suggestions
-    binding.pry
   end
 
   def new
