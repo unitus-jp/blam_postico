@@ -2,6 +2,8 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @games = Game.all
+    @suggestions = @user.suggestions
+    binding.pry
   end
 
   def new
