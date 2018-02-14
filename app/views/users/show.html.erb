@@ -42,6 +42,13 @@
             <%= @user.nickname %>
             <img src="<%= @user.image_url %>">
           </h4>
+
+
+<!--投稿するボタン-->
+          <%= link_to "投稿する", :controller => "users", :action => "suggest" %>
+<!--           -->
+
+
           <div class="dropdown mr-4">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               お気に入り順

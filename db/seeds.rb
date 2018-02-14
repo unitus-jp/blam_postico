@@ -20,7 +20,7 @@ end
   Game.create(name: "ゲーム" + n.to_s, company_id: n)
 end
 
-100.times do |n|
-  gakuseki = 4315117 + n
-  User.create!(username: "user"  + n.to_s, password: "password", email: gakuseki.to_s + "@ed.tus.ac.jp")
-end
+#100.times do |n|
+#  gakuseki = 4315117 + n
+#  User.create!(username: "user"  + n.to_s, password: "password", email: gakuseki.to_s + "@ed.tus.ac.jp")
+#end
