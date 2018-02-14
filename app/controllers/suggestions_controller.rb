@@ -1,4 +1,5 @@
 class SuggestionsController < ApplicationController
+  protect_from_forgery except: :create  #CSRF対策対策（よくわからない）
   def list
     @game = Game.find(params[:id])
     @suggestions = @game.suggestions
