@@ -1,0 +1,306 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* line 1, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/header.scss */
+header {
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 6, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/header.scss */
+header .container .row .logo img {
+  width: 12%;
+}
+
+/* line 10, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/header.scss */
+header .sharebuttons img {
+  width: 25px;
+}
+/* line 5, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/home.scss */
+body {
+  height: 100%;
+}
+
+/* line 9, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/home.scss */
+.main-content .photo {
+  text-align: center;
+  background-image: url("./iphone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vw;
+  opacity: 0.85;
+}
+
+/* line 19, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/home.scss */
+.main-content .photo .logo {
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+
+/* line 24, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/home.scss */
+.main-content .photo .logo img {
+  width: 40vw;
+}
+
+/* line 28, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/home.scss */
+.main-content .photo .buttons:before {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+/* line 34, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/home.scss */
+.main-content .photo .buttons .login, .no-login {
+  width: 20vw;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 1.6vw 0px;
+  box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  opacity: 1.0;
+  font-size: 2vw;
+}
+
+/* line 44, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/home.scss */
+.main-content .photo .white {
+  background: rbga(255, 255, 255, 0.5);
+  width: 100%;
+  height: 60vw;
+}
+
+/* line 50, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/home.scss */
+.main-content .photo .buttons .login {
+  border: 2px solid white;
+  color: white;
+  background-color: #00B8F8;
+}
+
+/* line 56, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/home.scss */
+.main-content .photo .buttons .no-login {
+  border: 2px solid #00B8F8;
+  color: #00B8F8;
+  background-color: white;
+}
+/* line 1, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestion-box.scss */
+#suggestion-box a {
+  text-decoration: none;
+  color: #4F5B6A;
+}
+
+/* line 6, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestion-box.scss */
+#suggestion-box .suggestion {
+  list-style: none;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+}
+
+/* line 12, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestion-box.scss */
+#suggestion-box .suggestion .suggestion-content {
+  font-size: 14px;
+}
+
+/* line 16, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestion-box.scss */
+#suggestion-box .suggestion button {
+  background-color: #F9FAFC;
+  color: #4F5B6A;
+}
+
+/* line 21, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestion-box.scss */
+#suggestion-box .suggestion button i {
+  font-size: 20px;
+  color: #ff5270;
+  opacity: 0.7;
+}
+
+/* line 27, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestion-box.scss */
+#suggestion-box .suggestion button:hover i {
+  opacity: 1;
+}
+/* line 4, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestions.scss */
+#suggestions {
+  color: #4F5B6A;
+}
+
+/* line 8, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestions.scss */
+#suggestions .sub-header {
+  text-decoration: none;
+  border-top: 3px solid #E9EEF4;
+  border-bottom: 3px solid #E9EEF4;
+}
+
+/* line 14, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestions.scss */
+#suggestions button {
+  cursor: pointer;
+}
+
+/* line 18, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestions.scss */
+#suggestions .sub-header .dropdown-toggle {
+  background-color: white;
+  color: #4F5B6A;
+  font-size: 14px;
+  border: 3px solid #E9EEF4;
+}
+
+/* line 25, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestions.scss */
+#suggestions .sub-header .solve-btn {
+  background-color: #00B8F8;
+  color: white;
+}
+
+/* line 30, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/suggestions.scss */
+#suggestions .suggestion-wrapper {
+  background-color: #F9FAFC;
+}
+/* line 1, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top-company.scss */
+body {
+  height: 100%;
+}
+
+/* line 5, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top-company.scss */
+.main-content .photo {
+  text-align: center;
+  background-image: url("./iphone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vw;
+  opacity: 0.85;
+}
+
+/* line 15, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top-company.scss */
+.main-content .photo .logo {
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+
+/* line 20, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top-company.scss */
+.main-content .photo .logo img {
+  width: 40vw;
+}
+
+/* line 26, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top-company.scss */
+.main-content .photo .white {
+  background: rbga(255, 255, 255, 0.5);
+  width: 100%;
+  height: 60vw;
+}
+
+/* line 32, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top-company.scss */
+.main-content .photo .buttons:before {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+/* line 38, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top-company.scss */
+.main-content .photo .buttons .form-group .container {
+  margin-top: 5px;
+  width: 50vw;
+}
+
+/* line 43, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top-company.scss */
+.main-content .photo .buttons .login {
+  background-color: #00B8F8;
+  margin-top: 20px;
+  border-radius: 4px 4px 4px 4px;
+  padding: 2vw 0px;
+  color: #FFFFFF;
+  box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  opacity: 1.0;
+  font-size: 2vw;
+}
+/* line 1, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top.scss */
+body {
+  height: 100%;
+}
+
+/* line 5, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top.scss */
+.main-content .photo {
+  text-align: center;
+  background-image: url("./iphone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vw;
+  opacity: 0.85;
+}
+
+/* line 15, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top.scss */
+.main-content .photo .logo {
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+
+/* line 20, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top.scss */
+.main-content .photo .logo img {
+  width: 40vw;
+}
+
+/* line 25, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top.scss */
+.main-content .photo .white {
+  background: rbga(255, 255, 255, 0.5);
+  width: 100%;
+  height: 60vw;
+}
+
+/* line 31, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top.scss */
+.main-content .photo .buttons:before {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+/* line 37, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top.scss */
+.main-content .photo .buttons .login, .no-login {
+  float: left;
+  background-color: #00B8F8;
+  margin-top: 20px;
+  border-radius: 4px 4px 4px 4px;
+  padding: 2vw 0px;
+  color: #FFFFFF;
+  box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  opacity: 1.0;
+  font-size: 2vw;
+}
+
+/* line 51, /Users/suzukimiyuki/Desktop/blam_postico/app/assets/stylesheets/top.scss */
+.company-login {
+  background-color: #00B8F8;
+  width: 30%;
+  height: 7%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 4px 4px 4px 4px;
+  padding: 2vw 0px;
+  color: #FFFFFF;
+  box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  opacity: 1.0;
+  font-size: 2vw;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */

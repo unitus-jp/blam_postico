@@ -4,7 +4,7 @@ body {
 
 .main-content .photo{
   text-align: center;
-  background-image: url("./iphone.jpg");
+  background-image: url("./iphone.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -29,7 +29,7 @@ body {
 
 .main-content .photo .buttons .login,.no-login{
   float: left;
-  background-color: #00B8F8;
+  background-color: #F87178;
   width: 30%;
   height: 7%;
   margin-top: 20px;
